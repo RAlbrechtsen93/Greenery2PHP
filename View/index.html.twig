@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greenery</title>
+</head>
+<body>
+{% for g in greenery %}
+    temperature = {{ g.Temperature }}, humidity = {{ g.Humidity }}, light = {{ g.Light }}, timestamp = {{ g.TimeStamp }} <br>
+{% endfor %}
+</body>
+</html>
