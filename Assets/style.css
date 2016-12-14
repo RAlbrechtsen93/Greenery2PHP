@@ -88,7 +88,7 @@ nav > ul > li > a:hover{
 
 }
 
-.GreeneryAdd > input[type=text], #greeneryID, #greeneryHumid, #greeneryLight, #greeneryTemp, #greeneryTimestamp{
+.GreeneryAdd > input[type=text], #greeneryID, #greeneryHumid, #greeneryLight, #greeneryTemp, #greeneryTimestamp, #greeneryAverage{
     width: 20%;
     padding: 12px 20px;
     margin: 8px 0;

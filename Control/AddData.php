@@ -22,13 +22,20 @@ $client = new SoapClient($url);
 
 //$fcs = $client->__soapCall(array('Id' ));
 
+/*
 $_POST['greeneryID'];
 $_POST['greeneryTemp'];
 $_POST['greeneryHumid'];
 $_POST['greeneryLight'];
 $_POST['greeneryTimestamp'];
+$_POST['greeneryAverage'];
 
-$GreenData = array('ID' => $_POST['greeneryID'],  'Temperature' => $_POST['greeneryTemp'], 'Humidity' => $_POST['greeneryHumid'], 'Light' => $_POST['greeneryLight'], 'Timestamp' => $_POST['greeneryTimestamp'] );
+
+
+$GreenData = array('ID' => $_POST['greeneryID'],  'Temperature' => $_POST['greeneryTemp'], 'Humidity' => $_POST['greeneryHumid'], 'Light' => $_POST['greeneryLight'], 'Timestamp' => $_POST['greeneryTimestamp'], 'Average' => $_POST['greeneryAverage'] );
 $json = json_encode($GreenData);
+print_r($json);
 
-$GreenData->__Call("AddGreeneryData", array());
+$client->AddGreeneryData ($GreenData);
+*/
+

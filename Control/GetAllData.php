@@ -25,6 +25,7 @@ $data1 = json_decode(json_encode($allData), true);
 $data2 = $data1["GetAllDataResult"];
 $data3 = $data2["Greenery"];
 
+/*
 echo "<br>";
 foreach ($data3 as $row)
 {
@@ -37,3 +38,27 @@ foreach ($data3 as $row)
     echo '<td>TimeStamp' . $row["TimeStamp"] . '<br> </td>';
     echo '</tr>' ;
 }
+*/
+
+echo'<table style="width:100%">';
+echo ' <caption>AllData</caption>';
+echo'<tr>';
+echo ' <th>Id</th>';
+echo' <th>Humidity</th>';
+echo ' <th>Light</th>';
+echo ' <th>Temperature</th>';
+echo ' <th>TimeStamp</th>';
+echo '</tr>';
+
+foreach ($data3 as $row)
+{
+    echo '<tr>';
+    echo '<td>' . $row["Id"] . ' </td>';
+
+    echo '<td>' . $row ["Humidity"]. '</td>';
+    echo '<td>' . $row["Light"] . '  </td>';
+    echo '<td>' . $row["Temperature"] . ' </td>';
+    echo '<td>' . $row["TimeStamp"] . '<br> </td>';
+    echo '</tr>' ;
+}
+echo'</table>';
